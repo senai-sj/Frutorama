@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Frutorama</title>
+    <%= csrf_meta_tags %>
+
+    <!-- <link href="/design.scss" type="text/css" rel="stylesheet">
+    <link rel="icon" href="/favicon-16x16.png">-->
+    
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    
+  </head>
+
+  <body>
+    
+    
+     <%= yield %>
+
+  	<footer>
+    Versão 0.8 &copy; Copyright SENAI - All Rights Reserved.
+    </footer>
+      
+  </body>
+</html>

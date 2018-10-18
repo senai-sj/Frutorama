@@ -1,0 +1,42 @@
+<div id="header"><h1>Frutorama</h1></div>
+<div id="subheader">Cadastro</div>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="container">
+    
+      <%= f.label :name, "Nome" %>
+      <%= f.text_field :name, required: true, autofocus: true %>
+        
+      <%= f.label :email %>
+      <%= f.email_field :email, autocomplete: "email" %>
+        
+      <%= f.label :username, "Login" %>
+      <%= f.text_field :username, autocomplete: "username" %>
+      
+      <%= f.label :date_of_birth,"Data de Nascimento" %>
+      <%= f.date_field :date_of_birth, autocomplete: "date_of_birth" %>
+      
+      <%= f.label :password, "Senha "%>
+      <% if @minimum_password_length %>
+    <em>(Mínimo de <%= @minimum_password_length %> Caracteres)</em>
+    <% end %>
+      <%= f.password_field :password, autocomplete: "new-password" %>
+      
+    
+   
+      <%= f.label :password_confirmation, "Confirmação de Senha"%>
+      <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    
+</div>
+  <br>
+
+  <div class="actions">
+    <%= f.submit "Cadastrar" %>
+  </div>
+  <br>
+<% end %>
+
+
+<%= render "devise/shared/links" %>

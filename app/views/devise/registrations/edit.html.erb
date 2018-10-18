@@ -1,0 +1,41 @@
+<div id="header"><h1>Frutorama</h1></div>
+<div id="subheader">Editar Perfil <%= resource_name.to_s.humanize %></div>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="container">
+    
+      <%= f.label :email %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Confirmação de email: <%= resource.unconfirmed_email %></div>
+  <% end %>
+
+      <%= f.label :password, "Nova Senha" %>
+      <!-- <i>(Deixe em branco se não quiser mudar a senha)</i> -->
+      <% if @minimum_password_length %>
+      <em>(Mínimo de <%= @minimum_password_length %> caracteres)</em>
+    <% end %>
+      
+      <%= f.password_field :password, autocomplete: "new-password" %>
+ 
+      <%= f.label :password_confirmation, "Confirmar Senha" %>
+      <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+        
+      <%= f.label :current_password, "Senha Atual" %>
+      <%= f.password_field :current_password, autocomplete: "current-password" %>
+  
+  </div>  
+
+  <div class="actions">
+    <%= f.submit "Atualizar" %>
+    <%= button_to "Cancelar Conta", registration_path(resource_name), data: { confirm: "Você tem certeza?" }, method: :delete %>
+   
+  </div>
+  <br>
+ 
+<% end %>
+
+<%= link_to "Voltar", :back %>

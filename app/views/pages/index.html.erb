@@ -1,0 +1,30 @@
+<script src="/assets/intro.js"></script>
+
+<div id="header"><h1>Frutorama</h1></div>
+<div id="subheader">Menu Principal</div>
+
+<div class="intro" onclick="inicio()">
+
+  <h1>Bem Vindo!</h1>
+
+    <h3>Comunicado</h3>
+    <p>Olá. Devido as novas políticas de privacidade</p>
+    <p>alguns navegadores precisam que o usuário</p>
+    <p>interaja com a página para que certas funções</p>
+    <p>aconteçam ou sejam executadas.</p>
+    <p>Para avançar para a página principal, clique</p>
+    <p>em qualquer região deste comunicado.</p>
+
+</div>
+<div id="form">
+  <a href="/fases" ><input type="submit" value="Iniciar"></input></a><br>
+  <a href="/tutorial"><input type="submit" value="Tutorial"></input></a><br>
+  <a href="/creditos"><input type="submit" value="Creditos"></input></a><br>
+  <a href="/lideres"><input type="submit" value="Placar de Líderes"></input></a><br>
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "button"  %>
+</div>
+
+<!-- <audio src="/sons/Funkorama.mp3" preload="auto" id="music0"></audio>
+<audio src="/sons/Mandeville.mp3" preload="auto" id="music1"></audio>
+<audio src="/sons/DD_Groove.mp3" preload="auto" id="music2"></audio>
+ -->

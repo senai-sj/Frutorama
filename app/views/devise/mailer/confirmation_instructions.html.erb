@@ -1,0 +1,6 @@
+<div id="header"><h1>Frutorama</h1></div>
+<p>Bem Vindo <%= @name %>!</p>
+
+<p>Pode confirmar o email da sua conta através do link abaixo:</p>
+
+<p><%= link_to 'Confirmar minha conta', confirmation_url(@resource, confirmation_token: @token) %></p>

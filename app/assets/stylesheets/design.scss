@@ -1,0 +1,254 @@
+@font-face {
+  font-family: NOZSTUDIO;
+  src:url(font-path('NOZSTUDIO.ttf'))  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Digital;
+  src:url(font-path('Digital.ttf'))  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Pepperoni;
+  src:url(font-path('pepperoni_pizza.ttf'))  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenDyslexic;
+  src:url(font-path('OpenDyslexic.ttf'))  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:Neigfriste;
+  src:url(font-path('Neigfriste.ttf'))  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  display: inline;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #0a131a;
+  font-family: OpenDyslexic;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+
+
+
+/* Divs e Containers*/
+#header {
+  font-family: Pepperoni;
+  font-size: 50px;
+  text-align: center;
+  text-shadow:0px 0px 15px #F00;
+  color: #F90;
+}
+
+#subheader {
+  font-family: Pepperoni;
+  font-size: 30px;
+  text-align: center;
+  text-shadow:0px 0px 8px #00B8C9;
+  color: #FFF;
+}
+
+
+
+
+/* Planos de Fundo*/
+/*.fundo {
+  background-color: #0a131a;
+  font-family: verdana;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+*/
+
+/* Formulário*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select, textarea {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=date], select, textarea {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email], select, textarea {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/*label {
+    padding: 6px 0px 10px 40px;
+    display: inline-block;
+
+}*/
+#form {
+  padding: 1em;
+  position: relative;
+  font-family: verdana;
+  font-size: 15px;
+  text-align: center;
+  color: #FFF;
+}
+
+#form a {margin-bottom: 4px;}
+
+.container {
+
+    font-size: 14px;
+    text-align: left;
+    border-radius: 5px;
+    background-color: #0a131a;
+    padding: 20px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*Fim do formulário*/
+
+.intro {
+  padding: 1em;
+  background-color: #000000AA;
+  color: #FFF;
+  text-shadow:1px 1px 8px #00C9E9;
+  cursor: pointer;
+  font-family: OpenDyslexic;
+  font-size: 12px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 350px;
+}
+
+.alinhamento {
+  padding: 1em;
+  font-family: verdana;
+  font-size: 15px;
+  text-align: center;
+  color: #000;
+}
+/* Botões e caixas*/
+#config-box {
+  width: 150px;
+  height: 22px;
+  font-size: 16px;
+  font-family: verdana;
+  font-weight:bold;
+  text-align: center;
+  color: #000;
+}
+
+
+/* Botões */
+.button{
+
+  min-width: 180px;
+  max-width: 290px;
+  border: 0px solid #000;
+  border-radius: 0px;
+  display:inline-block;
+  cursor:pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-family: Neigfriste;
+  font-size: 18px;
+  padding:6px 10px;
+  text-decoration:none;
+  box-shadow: 0px 3px 8px #000;
+  background:linear-gradient(to bottom, #003e83 10%, #0063d0 100%);
+  color: #FFF;
+
+}
+
+.button:hover{
+
+background:linear-gradient(to bottom, #0157b7 10%, #0078fc 100%);
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #000;  
+}
+
+input[type=submit] {
+
+  min-width: 180px;
+  max-width: 300px;
+  border: 0px solid #000;
+  border-radius: 0px;
+  display:inline-block;
+  cursor:pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-family: Neigfriste;
+  font-size: 18px;
+  padding:6px 10px;
+  text-decoration:none;
+  box-shadow: 0px 3px 8px #000;
+  background:linear-gradient(to bottom, #003e83 10%, #0063d0 100%);
+  color: #FFF;
+}
+
+input[type=submit]:hover {
+  background:linear-gradient(to bottom, #0157b7 10%, #0078fc 100%);
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #000;
+}
+
+.button_to{
+
+  float: right;
+
+}
+
+
+footer {
+  font-family: OpenDyslexic;
+  font-size: 14px;
+  color: #FFF;
+  text-align: right;
+  text-shadow:0px 0px 8px #DCBBCC;
+  padding-bottom: 2em;
+  padding-top: 2em;
+  padding-right: 3em;
+}

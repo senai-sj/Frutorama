@@ -1,0 +1,35 @@
+<script src="/assets/n1.js"></script>
+
+<div class="bg">
+	<div class="inicio" onclick="start();">
+		<h1>Instruções</h1><br>
+		<p>Mova o personagem com as setas < - > ou A e D</p><br>
+		<p>Colete as frutas e verduras e evite a comida processada</p><br>
+		<p>Colete todos os itens para prosseguir para a próxima fase</p>
+		<p>Boa Sorte!</p><br>
+		<b>♫ Fones de ouvido Recomendados ♫</b>
+		<h3>Clique aqui para iniciar</h3>
+	</div>
+	<div id="player"><br></div>
+	<div id="maca"><br></div>
+	<div id="melao"><br></div>
+	<div id="donut"><br></div>
+	<div id="laranja"><br></div>
+	<div id="refri"><br></div>
+	<div class="vitoria" href="/n2"></div>
+	<div class="fim" onclick="start();"></div>
+</div>
+<div id="placar" onload="pontos()"></div>
+<div id="tempo" onload="cronos()"></div>
+<div id="saude" onload="vidas()"></div>
+
+<!-- <audio src="/sons/BossaBossa.mp3" preload="auto" id="musica"></audio>
+<audio src="/sons/Discovery_Hit.mp3" preload="auto" id="gameover"></audio>
+<audio src="/sons/Loping_Sting.mp3" preload="auto" id="victory"></audio>
+ -->
+<div id="buttonrow">
+	<a href="/"><input type="submit" value="Sair"></input></a>
+	<a href="/n1"><input type="submit" value="Reiniciar"></input></a>
+	<button class="button" onclick="pausa();">Pausar</button>
+</div>
+
